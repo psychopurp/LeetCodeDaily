@@ -36,7 +36,7 @@ class Solution:
     #         return node_list[0]
 
     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
-        '''双指针实现 时间复杂度O(n) 空间复杂度o(1) '''
+        # 双指针实现 时间复杂度O(n) 空间复杂度o(1)
         dummy = ListNode(0)
         dummy.next = head
         p = dummy
