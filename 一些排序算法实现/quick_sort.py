@@ -10,6 +10,7 @@ def generate_rand(num):
 
 
 def quick_sort(nums, low, high):
+    '''时间复杂度 O(nlog n)'''
     # 返回基准值
     def partition(nums, low, high):
         pivot = nums[low]
