@@ -32,7 +32,23 @@ def quick_sort(nums, low, high):
         quick_sort(nums, base+1, high)
 
 
+def quick_sort_2(nums):
+    '''空间复杂度O(N)'''
+    if len(nums) <= 1:
+        return nums
+
+    pivot = nums.pop()
+    lesser, greater = [], []
+    for i in nums:
+        if i > pivot:
+            greater.append(i)
+        else:
+            lesser.append(i)
+    return quick_sort_2(lesser)+[pivot]+quick_sort_2(greater)
+
+
 if __name__ == "__main__":
     data = generate_rand(1000)
-    quick_sort(data, 0, len(data) - 1)
-    print(data)
+    # quick_sort(data, 0, len(data) - 1)
+    result = quick_sort_2(data)
+    print(result)
