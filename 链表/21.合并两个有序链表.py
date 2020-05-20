@@ -13,31 +13,46 @@
 
 
 class Solution:
+    # def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+    #     head = None
+    #     tmp_node = None
+    #     while l1 or l2:
+    #         val: int
+    #         if l1 and l2:
+    #             if l1.val <= l2.val:
+    #                 val = l1.val
+    #                 l1 = l1.next
+    #             else:
+    #                 val = l2.val
+    #                 l2 = l2.next
+    #         elif l1:
+    #             val = l1.val
+    #             l1 = l1.next
+    #         elif l2:
+    #             val = l2.val
+    #             l2 = l2.next
+    #         if not head:
+    #             head = ListNode(val)
+    #             tmp_node = head
+    #         else:
+    #             tmp = ListNode(val)
+    #             tmp_node.next = tmp
+    #             tmp_node = tmp_node.next
+    #     return head
+
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
-        head = None
-        tmp_node = None
-        while l1 or l2:
-            val: int
-            if l1 and l2:
-                if l1.val <= l2.val:
-                    val = l1.val
-                    l1 = l1.next
-                else:
-                    val = l2.val
-                    l2 = l2.next
-            elif l1:
-                val = l1.val
+        res = head = ListNode(0)
+        while l1 and l2:
+            if l1.val < l2.val:
+                head.next = l1
                 l1 = l1.next
-            elif l2:
-                val = l2.val
-                l2 = l2.next
-            if not head:
-                head = ListNode(val)
-                tmp_node = head
             else:
-                tmp = ListNode(val)
-                tmp_node.next = tmp
-                tmp_node = tmp_node.next
-        return head
+                head.next = l2
+                l2 = l2.next
+            head = head.next
+
+        head.next = l1 or l2
+
+        return res.next
 
 # @lc code=end
