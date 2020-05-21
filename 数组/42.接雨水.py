@@ -52,28 +52,44 @@ class Solution:
     #         count += min_height - height[i]
     #     return count
 
+    # def trap(self, height: List[int]) -> int:
+    #     # 单调栈
+    #     # 时间复杂度 O(n) 空间复杂度O(2*n)
+
+    #     stack = []
+    #     current = 0
+    #     count = 0
+
+    #     while current < len(height):
+
+    #         # 如果当前高度大于栈顶高度
+    #         while stack and height[current] > height[stack[-1]]:
+    #             # 要出栈的元素
+    #             h = stack.pop()
+    #             if not stack:
+    #                 break
+    #             # 两堵墙间的距离
+    #             distance = current - stack[-1] - 1
+    #             min_height = min(height[stack[-1]], height[current])
+    #             count += distance*(min_height-height[h])
+
+    #         stack.append(current)
+    #         current += 1
+    #     return count
+
     def trap(self, height: List[int]) -> int:
-        # 单调栈
-        # 时间复杂度 O(n) 空间复杂度O(2*n)
-
         stack = []
-        current = 0
-        count = 0
-
-        while current < len(height):
-
-            # 如果当前高度大于栈顶高度
-            while stack and height[current] > height[stack[-1]]:
-                # 要出栈的元素
-                h = stack.pop()
+        area = 0
+        for i, val in enumerate(height):
+            while stack and val > height[stack[-1]]:
+                cur = stack.pop()
                 if not stack:
                     break
-                # 两堵墙间的距离
-                distance = current - stack[-1] - 1
-                min_height = min(height[stack[-1]], height[current])
-                count += distance*(min_height-height[h])
-
-            stack.append(current)
-            current += 1
-        return count
+                l = stack[-1]
+                r = i
+                h = min(height[l], height[r])-height[cur]
+                w = r-l-1
+                area += w*h
+            stack.append(i)
+        return area
         # @lc code=end
