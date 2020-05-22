@@ -24,22 +24,19 @@ class Solution:
 
     def permute(self, nums: List[int]) -> List[List[int]]:
         # 回溯算法
-        result = []
-
-        def backtrack(nums, track):
-            if len(track) == len(nums):
-                result.append(track[:])
+        def back_track(nums, track):
+            if len(nums) == len(track):
+                res.append(track)
                 return
 
-            for i in range(len(nums)):
-                if nums[i] in track:
+            for i in nums:
+                if i in track:
                     continue
-                track.append(nums[i])
-                backtrack(nums, track)
-                track.pop()
+                back_track(nums, track+[i])
 
-        backtrack(nums, [])
-        return result
+        res = []
+        back_track(nums, [])
+        return res
 
 
 # @lc code=end
