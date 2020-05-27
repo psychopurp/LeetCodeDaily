@@ -30,21 +30,46 @@ class Solution:
     #     helper(root, 0)
     #     return result
 
+    # def levelOrder(self, root: TreeNode) -> List[List[int]]:
+    #     # 迭代实现
+    #     result = []
+    #     level = 0
+    #     queue = [(root, level)]
+
+    #     while queue:
+    #         node, level = queue.pop(0)
+    #         if not node:
+    #             continue
+    #         if len(result) == level:
+    #             result.append([])
+    #         result[level].append(node.val)
+    #         queue.append((node.left, level+1))
+    #         queue.append((node.right, level + 1))
+    #     return result
+
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
-        # 迭代实现
+        # 广度优先搜索
+        from collections import deque
+        if not root:
+            return []
         result = []
-        level = 0
-        queue = [(root, level)]
+        queue = deque()
+        queue.append(root)
 
         while queue:
-            node, level = queue.pop(0)
-            if not node:
-                continue
-            if len(result) == level:
-                result.append([])
-            result[level].append(node.val)
-            queue.append((node.left, level+1))
-            queue.append((node.right, level + 1))
+            child = deque()
+            cur = []
+            for node in queue:
+                if not node:
+                    continue
+                cur.append(node.val)
+                if node.left:
+                    child.append(node.left)
+                if node.right:
+                    child.append(node.right)
+            result.append(cur)
+            queue = child
+
         return result
 
         # @lc code=end
