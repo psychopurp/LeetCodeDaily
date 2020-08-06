@@ -33,8 +33,10 @@ class Solution:
         ans = 0
         for i in range(32):
             mask = 1 << i
-            mask = 1 << (31 - i) if (mask & n) != 0 else 0  # 判断对应的位是0还是1
-            ans |= mask
+            # 判断对应的位是0还是1
+            if mask & n == 0:
+                continue
+            ans |= 1 << 31-i
         return ans
 
 
