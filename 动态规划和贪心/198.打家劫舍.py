@@ -25,7 +25,7 @@ class Solution:
         amount = 0
         for i in range(len(nums)):
             cur = nums[i]
-            amount = max(prepre + cur, pre, amount)
+            amount = max(prepre + cur, pre)
             prepre = pre
             pre = amount
         return amount
