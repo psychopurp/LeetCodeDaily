@@ -19,18 +19,24 @@ class Solution:
     #             dp.append(val)
     #     return max(dp)
 
+    # def maxSubArray(self, nums: List[int]) -> int:
+    #     # 贪心算法
+    #     ans = float('-inf')
+    #     summ = 0
+
+    #     for i in range(len(nums)):
+    #         summ += nums[i]
+    #         ans = max(ans, summ)
+    #         if summ < 0:
+    #             summ = 0
+
+    #     return ans
+
     def maxSubArray(self, nums: List[int]) -> int:
-        # 贪心算法
-        ans = float('-inf')
-        summ = 0
-
-        for i in range(len(nums)):
-            summ += nums[i]
-            ans = max(ans, summ)
-            if summ < 0:
-                summ = 0
-
-        return ans
+        # 最大子序和 = 当前元素自身最大，或者包含之前后最大
+        for i in range(1, len(nums)):
+            nums[i] = max(nums[i], nums[i-1]+nums[i])
+        return max(nums)
 
 
 # @lc code=end
