@@ -59,7 +59,7 @@ class Solution:
         def flip(i: int, j: int, digit: int):
             rowUsed[i] ^= (1 << digit)
             columnUsed[j] ^= (1 << digit)
-            blockUsed[i//3][j//3] ^= (1 << digit)
+            blockUsed[(i//3)*3+j//3] ^= (1 << digit)
 
         def dfs(pos: int):
             nonlocal valid
@@ -68,7 +68,7 @@ class Solution:
                 return
             i, j = spaces[pos]
             mask = ~(rowUsed[i] | columnUsed[j] |
-                     blockUsed[i//3][j//3]) & 0x1ff
+                     blockUsed[(i//3)*3+j//3]) & 0x1ff
 
             digit = 0
             while mask:
@@ -84,7 +84,7 @@ class Solution:
 
         rowUsed = [0]*9
         columnUsed = [0]*9
-        blockUsed = [[0 for _ in range(3)] for _ in range(3)]
+        blockUsed = [0]*9
         spaces = []
         valid = False
         for i in range(n):
