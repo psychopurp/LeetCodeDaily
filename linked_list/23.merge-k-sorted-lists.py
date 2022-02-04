@@ -102,7 +102,7 @@ class Solution:
         # 0,8
 
         # divide and conquer: iterating
-        # time complexity: O(N*logK)
+        # time complexity: O(N*logK) => O(logK * K * 2N/K)
         # space complexity: O(1)
 
         def merge2Lists(l1: ListNode, l2: ListNode) -> ListNode:
