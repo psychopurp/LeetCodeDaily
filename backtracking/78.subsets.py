@@ -43,21 +43,40 @@ class Solution:
 
     #     return ans
 
+    # def subsets(self, nums: List[int]) -> List[List[int]]:
+    #     # bit manipulation
+    #     # space complexity: O(n)
+    #     # time complexity: O(n*2^n)
+
+    #     ans = []
+
+    #     i = 0
+    #     while i < (1 << len(nums)):
+    #         subset = []
+    #         for j in range(len(nums)):
+    #             if i >> j & 1:
+    #                 subset.append(nums[j])
+    #         ans.append(subset[:])
+    #         i += 1
+    #     return ans
+
     def subsets(self, nums: List[int]) -> List[List[int]]:
-        # bit manipulation
+        # backtracking
         # space complexity: O(n)
         # time complexity: O(n*2^n)
 
-        ans = []
+        def backtrack(way: List[int], index: int):
+            if index == len(nums):
+                ans.append(way[:])
+                return
 
-        i = 0
-        while i < (1 << len(nums)):
-            subset = []
-            for j in range(len(nums)):
-                if i >> j & 1:
-                    subset.append(nums[j])
-            ans.append(subset[:])
-            i += 1
+            backtrack(way, index+1)
+            way.append(nums[index])
+            backtrack(way, index+1)
+            way.pop()
+
+        ans = []
+        backtrack([], 0)
         return ans
 
 # @lc code=end
