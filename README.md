@@ -7,13 +7,13 @@
 #### 1.Array, Linked List , Skip List
 * https://leetcode-cn.com/problems/container-with-most-water/
 * https://leetcode-cn.com/problems/move-zeroes/
-* https://leetcode.com/problems/climbing-stairs/
+* https://leetcode-cn.com/problems/climbing-stairs/
 * https://leetcode-cn.com/problems/3sum/ (high frequency)
-* https://leetcode.com/problems/reverse-linked-list/
-* https://leetcode.com/problems/swap-nodes-in-pairs
-* https://leetcode.com/problems/linked-list-cycle
-* https://leetcode.com/problems/linked-list-cycle-ii
-* https://leetcode.com/problems/reverse-nodes-in-k-group/
+* https://leetcode-cn.com/problems/reverse-linked-list/
+* https://leetcode-cn.com/problems/swap-nodes-in-pairs
+* https://leetcode-cn.com/problems/linked-list-cycle
+* https://leetcode-cn.com/problems/linked-list-cycle-ii
+* https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
 * https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
 * https://leetcode-cn.com/problems/rotate-array/
 * https://leetcode-cn.com/problems/merge-two-sorted-lists/
@@ -28,8 +28,8 @@
 * https://leetcode-cn.com/problems/min-stack/
 * https://leetcode-cn.com/problems/largest-rectangle-in-histogram
 * https://leetcode-cn.com/problems/sliding-window-maximum
-* https://leetcode.com/problems/design-circular-deque
-* https://leetcode.com/problems/trapping-rain-water/
+* https://leetcode-cn.com/problems/design-circular-deque
+* https://leetcode-cn.com/problems/trapping-rain-water/
 
 #### 3.Hash Map, Set
 * https://leetcode-cn.com/problems/valid-anagram/description/
