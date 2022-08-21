@@ -1,6 +1,8 @@
 # LeetCode-days
-记录leetcode做题的时光，希望之后再看到能有更好的思路
 
+Keep track of the time of LeetCoding
+
+* [Blind 75 LeetCode Questions](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
 
 ### Problems
 
