@@ -5,9 +5,12 @@ Keep track of the time of LeetCoding
 * [Blind 75 LeetCode Questions](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
 ### Problems
 
+done: :white_check_mark: 
+todo: :white_large_square:
+
 #### 1.Array, Linked List , Skip List
-* [x] [1. Two Sum](https://leetcode-cn.com/problems/two-sum/)
-* [x] [11. Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/)
+* [1. Two Sum](https://leetcode-cn.com/problems/two-sum/) :white_check_mark: 
+* [11. Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/) :white_check_mark: 
 * [x] [15. 3Sum](https://leetcode-cn.com/problems/3sum/)
 * [x] [21. Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 * [x] [24. Swap Nodes in Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs)
