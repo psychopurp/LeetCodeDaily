@@ -19,17 +19,18 @@ class Problems:
         tags = []
         for tag in self.tags:
             tags.append(tag["name"])
-        link = "|  | [{}. {}]({})  | {}| {}  | ✅      |".format(
-            self.id, self.title, self.url, self.difficulty, "")
+        link = "| [{}. {}]({})  |  ✅  |   {}    |".format(
+            self.id, self.title, self.url, "")
         return link
 
     def markdown_li(self) -> str:
-        link = "* [x] [{}. {}]({})".format(
+        link = "- [{}. {}]({}) ✅".format(
             self.id, self.title, self.url)
         return link
 
 
 def get_problem_by_url(raw_url: str) -> Problems:
+    raw_url = "https://leetcode-cn.com{}".format(raw_url)
     print("processing : {}".format(raw_url))
     splt = raw_url.split("/")
     slug = splt[-1] if splt[-1] else splt[-2]
@@ -80,7 +81,8 @@ def read_data():
     # findall() 查找匹配正则表达式的字符串
 
     with open("data") as f:
-        url = re.findall('https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+.*', f.read())
+        url = re.findall(
+            '/problems/[^)]*', f.read())
         return url
 
 
@@ -88,10 +90,14 @@ if __name__ == "__main__":
     links = read_data()
     problems: List[Problems] = []
     for link in links:
+        # print(link)
+        # continue
         problems.append(get_problem_by_url(link))
 
     problems.sort(key=lambda x: x.id)
     with open("res", "w+") as f:
-
+        # head1 = "| Title   | Status | Tags |"
+        # head2 = "| -- |   - | ---- |"
+        # f.write("{}\n{}\n".format(head1, head2))
         for problem in problems:
             f.write("{}\n".format(problem.markdown_li()))
