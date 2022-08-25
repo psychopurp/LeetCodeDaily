@@ -10,7 +10,7 @@ from typing import List, Tuple
 
 class Solution:
     # def numIslands(self, grid: List[List[str]]) -> int:
-    #     # DFS : first solution of mine
+    #     # DFS : this is my first solution
     #     # time complexity: O(M*N)
     #     # space complexity: O(M*N)
 
