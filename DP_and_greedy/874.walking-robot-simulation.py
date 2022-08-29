@@ -10,7 +10,7 @@ from typing import Dict, List, Tuple
 
 class Solution:
     def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:
-        # greedy solution
+        # monitoring robot's behaviour
         # time complexity: O(M*N) M=len(commands) N=len(obstacles)
         # space complexity: O(N) used in set
 
