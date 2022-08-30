@@ -42,7 +42,7 @@ class Solution:
 
     # def canJump(self, nums: List[int]) -> bool:
     #     # BFS
-    #     # time complexity: O(N)
+    #     # time complexity: O(N^2)
     #     # space complexity: O(N)
 
     #     from collections import deque
@@ -66,7 +66,7 @@ class Solution:
 
     # def canJump(self, nums: List[int]) -> bool:
     #     # DFS (Time Limit Exceeded)
-    #     # time complexity: O(N)
+    #     # time complexity: O(N^2)
     #     # space complexity: O(N)
 
     #     def dfs(cur: int):
