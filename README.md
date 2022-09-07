@@ -92,4 +92,13 @@ Keep track of the time of LeetCoding
 * [ ] [367. Valid Perfect Square](https://leetcode-cn.com/problems/valid-perfect-square/)
 
 #### 10.Dynamic Programming
+https://leetcode.cn/problems/unique-paths/
+https://leetcode.cn/problems/unique-paths-ii/
+https://leetcode.cn/problems/longest-common-subsequence/
+https://leetcode-cn.com/problems/climbing-stairs/description/
+https://leetcode-cn.com/problems/triangle/description/
+https://leetcode.com/problems/triangle/discuss/38735/Python-easy-to-understand-solutions-(top-down-bottom-up)
+https://leetcode-cn.com/problems/maximum-subarray/
+https://leetcode-cn.com/problems/maximum-product-subarray/description/
+https://leetcode-cn.com/problems/coin-change/description/
 
