@@ -1,5 +1,5 @@
-
-from typing import List
+import re
+from typing import List, Optional
 import requests
 import json
 
@@ -7,7 +7,7 @@ session = requests.Session()
 user_agent = r'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
 
 
-class Problems:
+class Problem:
     def __init__(self, id: int, title: str, difficulty: str, tags: List[str], url: str) -> None:
         self.id = id
         self.title = title
@@ -24,16 +24,13 @@ class Problems:
         return link
 
     def markdown_li(self) -> str:
-        link = "- [{}. {}]({}) ✅".format(
+        link = "* [x] [{}. {}]({})\n".format(
             self.id, self.title, self.url)
         return link
 
 
-def get_problem_by_url(raw_url: str) -> Problems:
-    raw_url = "https://leetcode-cn.com{}".format(raw_url)
-    print("processing : {}".format(raw_url))
-    splt = raw_url.split("/")
-    slug = splt[-1] if splt[-1] else splt[-2]
+def fetch_problems(problem_title: str) -> Optional[Problem]:
+    slug = problem_title
     url = "https://leetcode.com/graphql"
     params = {'operationName': "getQuestionDetail",
               'variables': {'titleSlug': slug},
@@ -57,47 +54,60 @@ def get_problem_by_url(raw_url: str) -> Problems:
               }
 
     json_data = json.dumps(params).encode('utf8')
-
     headers = {'User-Agent': user_agent, 'Connection':
                'keep-alive', 'Content-Type': 'application/json',
                'Referer': 'https://leetcode.com/problems/' + slug}
 
-    resp = session.post(url, data=json_data, headers=headers, timeout=10)
-
-    content = resp.json()
-
-    # 题目详细信息
-    question = content['data']['question']
-
-    print(question)
-
-    problem = Problems(int(question["questionId"]), question["questionTitle"],
-                       question["difficulty"], question["topicTags"], raw_url)
-    return problem
+    try:
+        resp = session.post(url, data=json_data, headers=headers, timeout=10)
+        question = resp.json()['data']['question']
+        raw_url = "https://leetcode-cn.com/problems/{}/".format(slug)
+        problem = Problem(int(question["questionFrontendId"]), question["questionTitle"],
+                          question["difficulty"], question["topicTags"], raw_url)
+        return problem
+    except:
+        print("encounter an error while fetching {}".format(slug))
+        return None
 
 
-def read_data():
-    import re
-    # findall() 查找匹配正则表达式的字符串
+def parse_md(file: str):
+    slug = re.compile("problems/[^/\n\)]*")
 
-    with open("data") as f:
-        url = re.findall(
-            '/problems/[^)]*', f.read())
-        return url
+    def get_title(s: str) -> str:
+        params = s.split("/")
+        return params[-1]
+
+    lines: List[str] = []
+    with open(file) as f:
+        lines = f.readlines()
+
+    output: List[str] = []
+
+    problems: List[Problem] = []
+    for line in lines:
+
+        slugs: List[str] = slug.findall(line)
+        if len(slugs) == 1:
+            title = get_title(slugs[0])
+            problem = fetch_problems(title)
+            if problem:
+                problems.append(problem)
+            else:
+                print("error problem {}".format(slugs))
+
+        else:
+            if problems:
+                problems.sort(key=lambda x: x.id)
+                p = map(lambda x: x.markdown_li(), problems)
+                output.extend(p)
+                problems.clear()
+            output.append(line)
+
+    with open("README.md", "w") as f:
+        f.writelines(output)
 
 
 if __name__ == "__main__":
-    links = read_data()
-    problems: List[Problems] = []
-    for link in links:
-        # print(link)
-        # continue
-        problems.append(get_problem_by_url(link))
 
-    problems.sort(key=lambda x: x.id)
-    with open("res", "w+") as f:
-        # head1 = "| Title   | Status | Tags |"
-        # head2 = "| -- |   - | ---- |"
-        # f.write("{}\n{}\n".format(head1, head2))
-        for problem in problems:
-            f.write("{}\n".format(problem.markdown_li()))
+    parse_md("./README.md")
+    exit(0)
