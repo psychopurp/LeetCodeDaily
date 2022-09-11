@@ -71,16 +71,16 @@ class Solution:
     #     # time complexity: O(N)
     #     # space complexity: O(1)
     #     '''
-    #     rub : represents the maximum amount we will have if last night we robbed
-    #     not_rub : represents the amount we will have if last night we did't rob
+    #     rob : represents the maximum amount we will have if last night we robbed
+    #     not_rob : represents the amount we will have if last night we did't rob
     #     '''
 
-    #     rub = not_rub = amount = 0
+    #     rob = not_rob = 0
 
     #     for i in range(len(nums)):
-    #         rub, not_rub = max(not_rub+nums[i], rub), rub
-    #         amount = max(amount, rub, not_rub)
-    #     return amount
+    #         rob, not_rob = not_rob+nums[i], max(not_rob, rob)
+
+    #     return max(rob, not_rob)
 
     def rob(self, nums: List[int]) -> int:
         # Recursive (top-down DP)
