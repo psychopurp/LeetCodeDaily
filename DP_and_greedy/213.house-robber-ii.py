@@ -50,8 +50,9 @@ class Solution:
         def simple_rob(i: int, j: int) -> int:
             rob = not_rob = 0
             for k in range(i, j):
-                rob, not_rob = max(not_rob+nums[k], rob), rob
-            return rob
+                rob, not_rob = not_rob+nums[k], max(rob, not_rob)
+            return max(rob, not_rob)
+
         return max(simple_rob(1, len(nums)), simple_rob(0, len(nums)-1))
 
 
