@@ -1,5 +1,6 @@
+import os
 import re
-from typing import List, Optional
+from typing import List, Optional, Set
 import requests
 import json
 
@@ -14,6 +15,7 @@ class Problem:
         self.difficulty = difficulty
         self.tags = tags
         self.url = url
+        self.solved = False
 
     def markdown_table(self) -> str:
         tags = []
@@ -24,8 +26,9 @@ class Problem:
         return link
 
     def markdown_li(self) -> str:
-        link = "* [x] [{}. {}]({})\n".format(
-            self.id, self.title, self.url)
+        solved = 'x' if self.solved else ' '
+        link = "* [{}] [{}. {}]({})\n".format(solved,
+                                              self.id, self.title, self.url)
         return link
 
 
@@ -70,19 +73,19 @@ def fetch_problems(problem_title: str) -> Optional[Problem]:
         return None
 
 
-def parse_md(file: str):
+def render_md(file: str):
     slug = re.compile("problems/[^/\n\)]*")
+
+    lines: List[str] = read_md(file)
+    solved = get_solved(".")
+    visited = set()
 
     def get_title(s: str) -> str:
         params = s.split("/")
         return params[-1]
 
-    lines: List[str] = []
-    with open(file) as f:
-        lines = f.readlines()
-
     output: List[str] = []
-
+    lines.append("\n")
     problems: List[Problem] = []
     for line in lines:
 
@@ -91,6 +94,12 @@ def parse_md(file: str):
             title = get_title(slugs[0])
             problem = fetch_problems(title)
             if problem:
+                if problem.id in visited:
+                    continue
+
+                visited.add(problem.id)
+                if problem.id in solved:
+                    problem.solved = True
                 problems.append(problem)
             else:
                 print("error problem {}".format(slugs))
@@ -105,9 +114,37 @@ def parse_md(file: str):
 
     with open("README.md", "w") as f:
         f.writelines(output)
+    print(solved.difference(visited))
+    print("done!")
+
+
+def get_solved(dir: str) -> Set[int]:
+    problem = re.compile("[0-9]*\.[^\u4E00-\u9FFF]+\.py")
+    solved = set()
+
+    for root, _, files in os.walk(dir):
+        problems: List[str] = []
+        for file in files:
+            if problem.match(file):
+                problems.append(file)
+                solved.add(int(file.split('.')[0]))
+        if problems:
+            print(root, len(problems))
+    print("total solved : {}".format(len(solved)))
+    return solved
+
+
+def read_md(file: str) -> List[str]:
+    lines: List[str] = []
+    with open(file) as f:
+        lines = f.readlines()
+    return lines
+
+
+def main():
+    render_md("./README.md")
+    exit(0)
 
 
 if __name__ == "__main__":
-
-    parse_md("./README.md")
-    exit(0)
+    main()

@@ -10,20 +10,23 @@ Keep track of the time of LeetCoding
 
 #### 1.Array, Linked List , Skip List
 
-* [x] [1. Two Sum](https://leetcode-cn.com/problems/two-sum/)
 * [x] [11. Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/)
 * [x] [15. 3Sum](https://leetcode-cn.com/problems/3sum/)
+* [x] [19. Remove Nth Node From End of List](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 * [x] [21. Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+* [x] [23. Merge k Sorted Lists](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
 * [x] [24. Swap Nodes in Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
 * [x] [25. Reverse Nodes in k-Group](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
 * [x] [26. Remove Duplicates from Sorted Array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
 * [x] [66. Plus One](https://leetcode-cn.com/problems/plus-one/)
-* [x] [70. Climbing Stairs](https://leetcode-cn.com/problems/climbing-stairs/)
 * [x] [88. Merge Sorted Array](https://leetcode-cn.com/problems/merge-sorted-array/)
 * [x] [141. Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/)
-* [x] [142. Linked List Cycle II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+* [ ] [142. Linked List Cycle II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
+* [x] [143. Reorder List](https://leetcode-cn.com/problems/reorder-list/)
 * [x] [189. Rotate Array](https://leetcode-cn.com/problems/rotate-array/)
 * [x] [206. Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/)
+* [x] [217. Contains Duplicate](https://leetcode-cn.com/problems/contains-duplicate/)
+* [x] [238. Product of Array Except Self](https://leetcode-cn.com/problems/product-of-array-except-self/)
 * [x] [283. Move Zeroes](https://leetcode-cn.com/problems/move-zeroes/)
 
 #### 2.Stack, Queue, Priority Queue, Deque
@@ -37,15 +40,20 @@ Keep track of the time of LeetCoding
 
 #### 3.Hash Map, Set
 
-* [x] [1. Two Sum](https://leetcode-cn.com/problems/two-sum/)
+* [ ] [1. Two Sum](https://leetcode-cn.com/problems/two-sum/)
 * [x] [49. Group Anagrams](https://leetcode-cn.com/problems/group-anagrams/)
 * [x] [242. Valid Anagram](https://leetcode-cn.com/problems/valid-anagram/)
 
 #### 4.Tree, Binary Tree, BST(Binary Search Tree)
 
 * [x] [94. Binary Tree Inorder Traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
+* [x] [100. Same Tree](https://leetcode-cn.com/problems/same-tree/)
+* [x] [124. Binary Tree Maximum Path Sum](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
 * [x] [144. Binary Tree Preorder Traversal](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
+* [x] [230. Kth Smallest Element in a BST](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/)
+* [x] [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 * [x] [429. N-ary Tree Level Order Traversal](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/)
+* [x] [572. Subtree of Another Tree](https://leetcode-cn.com/problems/subtree-of-another-tree/)
 * [x] [589. N-ary Tree Preorder Traversal](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)
 * [x] [590. N-ary Tree Postorder Traversal](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/)
 
@@ -54,7 +62,6 @@ Keep track of the time of LeetCoding
 * [x] [22. Generate Parentheses](https://leetcode-cn.com/problems/generate-parentheses/)
 * [x] [46. Permutations](https://leetcode-cn.com/problems/permutations/)
 * [x] [47. Permutations II](https://leetcode-cn.com/problems/permutations-ii/)
-* [x] [70. Climbing Stairs](https://leetcode-cn.com/problems/climbing-stairs/)
 * [x] [77. Combinations](https://leetcode-cn.com/problems/combinations/)
 * [x] [98. Validate Binary Search Tree](https://leetcode-cn.com/problems/validate-binary-search-tree/)
 * [x] [104. Maximum Depth of Binary Tree](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
@@ -74,7 +81,6 @@ Keep track of the time of LeetCoding
 
 #### 7.BFS, DFS
 
-* [x] [22. Generate Parentheses](https://leetcode-cn.com/problems/generate-parentheses/)
 * [x] [102. Binary Tree Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 * [x] [126. Word Ladder II](https://leetcode-cn.com/problems/word-ladder-ii/)
 * [x] [127. Word Ladder](https://leetcode-cn.com/problems/word-ladder/)
@@ -106,9 +112,13 @@ Keep track of the time of LeetCoding
 * [x] [62. Unique Paths](https://leetcode-cn.com/problems/unique-paths/)
 * [x] [63. Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/)
 * [x] [70. Climbing Stairs](https://leetcode-cn.com/problems/climbing-stairs/)
+* [x] [91. Decode Ways](https://leetcode-cn.com/problems/decode-ways/)
 * [x] [120. Triangle](https://leetcode-cn.com/problems/triangle/)
+* [x] [121. Best Time to Buy and Sell Stock](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
+* [x] [139. Word Break](https://leetcode-cn.com/problems/word-break/)
 * [x] [152. Maximum Product Subarray](https://leetcode-cn.com/problems/maximum-product-subarray/)
+* [x] [198. House Robber](https://leetcode-cn.com/problems/house-robber/)
+* [x] [213. House Robber II](https://leetcode-cn.com/problems/house-robber-ii/)
 * [x] [300. Longest Increasing Subsequence](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 * [x] [322. Coin Change](https://leetcode-cn.com/problems/coin-change/)
 * [x] [1143. Longest Common Subsequence](https://leetcode-cn.com/problems/longest-common-subsequence/)
-
