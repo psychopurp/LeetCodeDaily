@@ -112,7 +112,7 @@ Keep track of the time of LeetCoding
 * [x] [53. Maximum Subarray](https://leetcode-cn.com/problems/maximum-subarray/)
 * [x] [62. Unique Paths](https://leetcode-cn.com/problems/unique-paths/)
 * [x] [63. Unique Paths II](https://leetcode-cn.com/problems/unique-paths-ii/)
-* [ ] [64. Minimum Path Sum](https://leetcode-cn.com/problems/minimum-path-sum/)
+* [x] [64. Minimum Path Sum](https://leetcode-cn.com/problems/minimum-path-sum/)
 * [x] [70. Climbing Stairs](https://leetcode-cn.com/problems/climbing-stairs/)
 * [x] [72. Edit Distance](https://leetcode-cn.com/problems/edit-distance/)
 * [ ] [76. Minimum Window Substring](https://leetcode-cn.com/problems/minimum-window-substring/)
@@ -134,10 +134,12 @@ Keep track of the time of LeetCoding
 * [ ] [363. Max Sum of Rectangle No Larger Than K](https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/)
 * [ ] [403. Frog Jump](https://leetcode-cn.com/problems/frog-jump/)
 * [ ] [410. Split Array Largest Sum](https://leetcode-cn.com/problems/split-array-largest-sum/)
+* [ ] [518. Coin Change II](https://leetcode-cn.com/problems/coin-change-ii/)
 * [ ] [552. Student Attendance Record II](https://leetcode-cn.com/problems/student-attendance-record-ii/)
 * [ ] [621. Task Scheduler](https://leetcode-cn.com/problems/task-scheduler/)
 * [ ] [647. Palindromic Substrings](https://leetcode-cn.com/problems/palindromic-substrings/)
 * [ ] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
 * [ ] [980. Unique Paths III](https://leetcode-cn.com/problems/unique-paths-iii/)
 * [x] [1143. Longest Common Subsequence](https://leetcode-cn.com/problems/longest-common-subsequence/)
+
 
