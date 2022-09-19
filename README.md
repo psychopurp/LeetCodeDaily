@@ -29,7 +29,12 @@ Keep track of the time of LeetCoding
 * [x] [238. Product of Array Except Self](https://leetcode-cn.com/problems/product-of-array-except-self/)
 * [x] [283. Move Zeroes](https://leetcode-cn.com/problems/move-zeroes/)
 
-#### 2.Stack, Queue, Priority Queue, Deque
+#### 2.Sliding Window
+
+* [ ] [76. Minimum Window Substring](https://leetcode-cn.com/problems/minimum-window-substring/)
+* [ ] [3. Longest Substring Without Repeating Characters](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)
+
+#### 3.Stack, Queue, Priority Queue, Deque
 
 * [x] [20. Valid Parentheses](https://leetcode-cn.com/problems/valid-parentheses/)
 * [x] [42. Trapping Rain Water](https://leetcode-cn.com/problems/trapping-rain-water/)
@@ -38,13 +43,13 @@ Keep track of the time of LeetCoding
 * [x] [239. Sliding Window Maximum](https://leetcode-cn.com/problems/sliding-window-maximum/)
 * [x] [641. Design Circular Deque](https://leetcode-cn.com/problems/design-circular-deque/)
 
-#### 3.Hash Map, Set
+#### 4.Hash Map, Set
 
 * [ ] [1. Two Sum](https://leetcode-cn.com/problems/two-sum/)
 * [x] [49. Group Anagrams](https://leetcode-cn.com/problems/group-anagrams/)
 * [x] [242. Valid Anagram](https://leetcode-cn.com/problems/valid-anagram/)
 
-#### 4.Tree, Binary Tree, BST(Binary Search Tree)
+#### 5.Tree, Binary Tree, BST(Binary Search Tree)
 
 * [x] [94. Binary Tree Inorder Traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
 * [x] [100. Same Tree](https://leetcode-cn.com/problems/same-tree/)
@@ -57,7 +62,7 @@ Keep track of the time of LeetCoding
 * [x] [589. N-ary Tree Preorder Traversal](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)
 * [x] [590. N-ary Tree Postorder Traversal](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/)
 
-#### 5.Generic Recursion, Recursion of tree
+#### 6.Generic Recursion, Recursion of tree
 
 * [x] [22. Generate Parentheses](https://leetcode-cn.com/problems/generate-parentheses/)
 * [x] [46. Permutations](https://leetcode-cn.com/problems/permutations/)
@@ -71,7 +76,7 @@ Keep track of the time of LeetCoding
 * [x] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 * [x] [297. Serialize and Deserialize Binary Tree](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
 
-#### 6.Devide and Conquer, Backtracking
+#### 7.Devide and Conquer, Backtracking
 
 * [x] [17. Letter Combinations of a Phone Number](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
 * [x] [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
@@ -79,7 +84,7 @@ Keep track of the time of LeetCoding
 * [x] [78. Subsets](https://leetcode-cn.com/problems/subsets/)
 * [x] [169. Majority Element](https://leetcode-cn.com/problems/majority-element/)
 
-#### 7.BFS, DFS
+#### 8.BFS, DFS
 
 * [x] [102. Binary Tree Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 * [x] [126. Word Ladder II](https://leetcode-cn.com/problems/word-ladder-ii/)
@@ -89,7 +94,7 @@ Keep track of the time of LeetCoding
 * [x] [515. Find Largest Value in Each Tree Row](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/)
 * [x] [529. Minesweeper](https://leetcode-cn.com/problems/minesweeper/)
 
-#### 8.Greedy Algorithm
+#### 9.Greedy Algorithm
 
 * [x] [45. Jump Game II](https://leetcode-cn.com/problems/jump-game-ii/)
 * [x] [55. Jump Game](https://leetcode-cn.com/problems/jump-game/)
@@ -98,7 +103,7 @@ Keep track of the time of LeetCoding
 * [x] [860. Lemonade Change](https://leetcode-cn.com/problems/lemonade-change/)
 * [x] [874. Walking Robot Simulation](https://leetcode-cn.com/problems/walking-robot-simulation/)
 
-#### 9.Binary Search
+#### 10.Binary Search
 
 * [x] [33. Search in Rotated Sorted Array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 * [x] [69. Sqrt(x)](https://leetcode-cn.com/problems/sqrtx/)
@@ -106,7 +111,7 @@ Keep track of the time of LeetCoding
 * [x] [153. Find Minimum in Rotated Sorted Array](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
 * [x] [367. Valid Perfect Square](https://leetcode-cn.com/problems/valid-perfect-square/)
 
-#### 10.Dynamic Programming
+#### 11.Dynamic Programming
 
 * [x] [32. Longest Valid Parentheses](https://leetcode-cn.com/problems/longest-valid-parentheses/)
 * [x] [53. Maximum Subarray](https://leetcode-cn.com/problems/maximum-subarray/)
