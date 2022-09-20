@@ -31,8 +31,8 @@ Keep track of the time of LeetCoding
 
 #### 2.Sliding Window
 
-* [ ] [76. Minimum Window Substring](https://leetcode-cn.com/problems/minimum-window-substring/)
-* [ ] [3. Longest Substring Without Repeating Characters](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)
+* [x] [3. Longest Substring Without Repeating Characters](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
+* [x] [76. Minimum Window Substring](https://leetcode-cn.com/problems/minimum-window-substring/)
 
 #### 3.Stack, Queue, Priority Queue, Deque
 
@@ -120,7 +120,6 @@ Keep track of the time of LeetCoding
 * [x] [64. Minimum Path Sum](https://leetcode-cn.com/problems/minimum-path-sum/)
 * [x] [70. Climbing Stairs](https://leetcode-cn.com/problems/climbing-stairs/)
 * [x] [72. Edit Distance](https://leetcode-cn.com/problems/edit-distance/)
-* [ ] [76. Minimum Window Substring](https://leetcode-cn.com/problems/minimum-window-substring/)
 * [x] [91. Decode Ways](https://leetcode-cn.com/problems/decode-ways/)
 * [x] [120. Triangle](https://leetcode-cn.com/problems/triangle/)
 * [x] [121. Best Time to Buy and Sell Stock](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
@@ -130,8 +129,8 @@ Keep track of the time of LeetCoding
 * [ ] [188. Best Time to Buy and Sell Stock IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/)
 * [x] [198. House Robber](https://leetcode-cn.com/problems/house-robber/)
 * [x] [213. House Robber II](https://leetcode-cn.com/problems/house-robber-ii/)
-* [ ] [221. Maximal Square](https://leetcode-cn.com/problems/maximal-square/)
-* [ ] [279. Perfect Squares](https://leetcode-cn.com/problems/perfect-squares/)
+* [x] [221. Maximal Square](https://leetcode-cn.com/problems/maximal-square/)
+* [x] [279. Perfect Squares](https://leetcode-cn.com/problems/perfect-squares/)
 * [x] [300. Longest Increasing Subsequence](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 * [ ] [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
 * [ ] [312. Burst Balloons](https://leetcode-cn.com/problems/burst-balloons/)
