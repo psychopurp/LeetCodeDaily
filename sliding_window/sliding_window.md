@@ -5,6 +5,7 @@
 
 For most substring problem, we are given a string and need to find a substring of it which satisfy some restrictions. A general way is to use a hashmap assisted with two pointers. The template is given below.
 
+* template 1
 
 ```c++
 int findSubstring(string s){
@@ -32,4 +33,23 @@ int findSubstring(string s){
         }
         return d;
   }
+```
+
+* template 2
+
+```c++
+int left = 0, right = 0;
+
+while (right < s.size()) {
+    // enlarge the window
+    window.add(s[right]);
+    right++;
+    
+    while (window needs shrink) {
+        // shrink the window
+        window.remove(s[left]);
+        left++;
+    }
+}
+
 ```
