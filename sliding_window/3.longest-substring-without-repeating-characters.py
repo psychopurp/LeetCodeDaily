@@ -20,7 +20,7 @@ class Solution:
         while end < len(s):
             hw[s[end]] += 1
 
-            while begin < end and hw[s[end]] > 1:
+            while hw[s[end]] > 1:
                 hw[s[begin]] -= 1
                 begin += 1
 
