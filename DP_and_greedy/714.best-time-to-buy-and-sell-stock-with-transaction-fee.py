@@ -28,5 +28,5 @@ class Solution:
             cur_hold = max(pre_hold, pre_not_hold-price)
             cur_not_hold = max(pre_not_hold, pre_hold+price-fee)
 
-        return max(cur_hold, cur_not_hold)
+        return cur_not_hold
 # @lc code=end
