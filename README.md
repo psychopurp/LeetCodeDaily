@@ -33,7 +33,10 @@ Keep track of the time of LeetCoding
 ### 2.Sliding Window
 
 * [x] [3. Longest Substring Without Repeating Characters](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
+* [x] [30. Substring with Concatenation of All Words](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/)
 * [x] [76. Minimum Window Substring](https://leetcode-cn.com/problems/minimum-window-substring/)
+* [x] [438. Find All Anagrams in a String](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/)
+* [x] [567. Permutation in String](https://leetcode-cn.com/problems/permutation-in-string/)
 
 ### 3.Stack, Queue, Priority Queue, Deque
 
@@ -142,7 +145,7 @@ Keep track of the time of LeetCoding
 * [ ] [518. Coin Change II](https://leetcode-cn.com/problems/coin-change-ii/)
 * [ ] [552. Student Attendance Record II](https://leetcode-cn.com/problems/student-attendance-record-ii/)
 * [ ] [621. Task Scheduler](https://leetcode-cn.com/problems/task-scheduler/)
-* [ ] [647. Palindromic Substrings](https://leetcode-cn.com/problems/palindromic-substrings/)
+* [x] [647. Palindromic Substrings](https://leetcode-cn.com/problems/palindromic-substrings/)
 * [ ] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
 * [ ] [980. Unique Paths III](https://leetcode-cn.com/problems/unique-paths-iii/)
 * [x] [1143. Longest Common Subsequence](https://leetcode-cn.com/problems/longest-common-subsequence/)
