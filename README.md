@@ -6,7 +6,7 @@ Keep track of the time of LeetCoding
 
 ## Problems
 
-* done: :white_check_mark: 
+* done: :white_check_mark:
 * todo: :white_large_square:
 
 ### 1.Array, Linked List , Skip List
@@ -79,6 +79,7 @@ Keep track of the time of LeetCoding
 * [x] [226. Invert Binary Tree](https://leetcode-cn.com/problems/invert-binary-tree/)
 * [x] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 * [x] [297. Serialize and Deserialize Binary Tree](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
+* [x] [1448. Count Good Nodes in Binary Tree](https://leetcode-cn.com/problems/count-good-nodes-in-binary-tree/)
 
 ### 7.Devide and Conquer, Backtracking
 
@@ -146,8 +147,7 @@ Keep track of the time of LeetCoding
 * [ ] [552. Student Attendance Record II](https://leetcode-cn.com/problems/student-attendance-record-ii/)
 * [ ] [621. Task Scheduler](https://leetcode-cn.com/problems/task-scheduler/)
 * [x] [647. Palindromic Substrings](https://leetcode-cn.com/problems/palindromic-substrings/)
-* [ ] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
+* [x] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
 * [ ] [980. Unique Paths III](https://leetcode-cn.com/problems/unique-paths-iii/)
 * [x] [1143. Longest Common Subsequence](https://leetcode-cn.com/problems/longest-common-subsequence/)
-
 
