@@ -82,25 +82,46 @@ class Solution:
 
     #     return max(rob, not_rob)
 
+    # def rob(self, nums: List[int]) -> int:
+    #     # Recursive (top-down DP)
+    #     # time complexity: O(N)
+    #     # space complexity: O(N)
+    #     '''
+    #     dp[i] represent the maximum amount till i.
+    #     '''
+
+    #     def dp(i: int) -> int:
+    #         if i < 0:
+    #             return 0
+    #         if i in memo:
+    #             return memo[i]
+
+    #         memo[i] = max(dp(i-2)+nums[i], dp(i-1))
+    #         return memo[i]
+
+    #     memo = {}
+    #     return dp(len(nums)-1)
+
     def rob(self, nums: List[int]) -> int:
-        # Recursive (top-down DP)
+        # Bottom-up DP
         # time complexity: O(N)
         # space complexity: O(N)
-        '''
-        dp[i] represent the maximum amount till i.
-        '''
+        """
+        matrix[i][0] represents we didn't robb house i
+        matrix[i][1] represents we robbed house i
+        """
+        n = len(nums)
+        matrix = [[0, 0] for _ in range(n)]
 
-        def dp(i: int) -> int:
-            if i < 0:
-                return 0
-            if i in memo:
-                return memo[i]
+        for i in range(n):
+            if i == 0:
+                matrix[i][1] = nums[i]
+                continue
 
-            memo[i] = max(dp(i-2)+nums[i], dp(i-1))
-            return memo[i]
+            matrix[i][1] = matrix[i - 1][0] + nums[i]
+            matrix[i][0] = max(matrix[i - 1][0], matrix[i - 1][1])
 
-        memo = {}
-        return dp(len(nums)-1)
+        return max(matrix[n - 1])
 
 
 # @lc code=end
