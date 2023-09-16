@@ -53,28 +53,53 @@ class Solution:
     #         profit += sell-buy
     #     return profit
 
+    # def maxProfit(self, prices: List[int]) -> int:
+    #     # DP
+    #     # time complexity: O(N)
+    #     # space complexity: O(1)
+    #     '''
+    #     For every day, we've three choices:
+    #     1.Don't do anything
+    #     2.Sell them for a profit
+    #     3.Buy new stock
+    #     '''
+
+    #     curHold, curNotHold = float("-inf"), 0
+    #     for price in prices:
+    #         prevHold, prevNotHold = curHold, curNotHold
+
+    #         # either keep hold, or buy in stock today at stock price
+    #         curHold = max(prevHold, prevNotHold-price)
+
+    #         # either keep not-hold, or sell out stock today at stock price
+    #         curNotHold = max(prevNotHold, prevHold+price)
+
+    #     # maximum profit must be in not-hold state
+    #     return curNotHold
+
     def maxProfit(self, prices: List[int]) -> int:
-        # DP
+        # Bottom-up DP
         # time complexity: O(N)
-        # space complexity: O(1)
-        '''
-        For every day, we've three choices:
+        # space complexity: O(N)
+        """
+        For each day, we have three choices:
         1.Don't do anything
         2.Sell them for a profit
         3.Buy new stock
-        '''
+        dp[i][0] represents on day i, we don't have stock, which means we either sold it or kept the last state
+        dp[i][1] represents on day i, we have stock, which means we either bought it or kept the last state
+        """
+        n = len(prices)
+        dp = [[0, 0] for _ in range(n)]
 
-        curHold, curNotHold = float("-inf"), 0
-        for price in prices:
-            prevHold, prevNotHold = curHold, curNotHold
+        for i in range(n):
+            if i == 0:
+                dp[i][1] = -prices[i]
+                continue
 
-            # either keep hold, or buy in stock today at stock price
-            curHold = max(prevHold, prevNotHold-price)
+            dp[i][1] = max(dp[i - 1][0] - prices[i], dp[i - 1][1])
+            dp[i][0] = max(dp[i - 1][1] + prices[i], dp[i - 1][0])
+        return dp[n - 1][0]
 
-            # either keep not-hold, or sell out stock today at stock price
-            curNotHold = max(prevNotHold, prevHold+price)
-
-        # maximum profit must be in not-hold state
-        return curNotHold
 
 # @lc code=end
