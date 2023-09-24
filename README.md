@@ -156,4 +156,7 @@ Keep track of the time of LeetCoding
 ### 12.Trie, Union-find
 
 * [x] [200. Number of Islands](https://leetcode-cn.com/problems/number-of-islands/)
+* [x] [208. Implement Trie (Prefix Tree)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)
+* [x] [212. Word Search II](https://leetcode-cn.com/problems/word-search-ii/)
 * [x] [547. Number of Provinces](https://leetcode-cn.com/problems/number-of-provinces/)
+
