@@ -9,7 +9,7 @@ Keep track of the time of LeetCoding
 * done: :white_check_mark:
 * todo: :white_large_square:
 
-### 1.Array, Linked List , Skip List
+### 1.Array, Linked List, Skip List
 
 * [x] [11. Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/)
 * [x] [15. 3Sum](https://leetcode-cn.com/problems/3sum/)
@@ -57,6 +57,7 @@ Keep track of the time of LeetCoding
 
 * [x] [94. Binary Tree Inorder Traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
 * [x] [100. Same Tree](https://leetcode-cn.com/problems/same-tree/)
+* [x] [103. Binary Tree Zigzag Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/)
 * [x] [124. Binary Tree Maximum Path Sum](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
 * [x] [144. Binary Tree Preorder Traversal](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
 * [x] [230. Kth Smallest Element in a BST](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/)
@@ -129,16 +130,16 @@ Keep track of the time of LeetCoding
 * [x] [91. Decode Ways](https://leetcode-cn.com/problems/decode-ways/)
 * [x] [120. Triangle](https://leetcode-cn.com/problems/triangle/)
 * [x] [121. Best Time to Buy and Sell Stock](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
-* [ ] [123. Best Time to Buy and Sell Stock III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/)
+* [x] [123. Best Time to Buy and Sell Stock III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/)
 * [x] [139. Word Break](https://leetcode-cn.com/problems/word-break/)
 * [x] [152. Maximum Product Subarray](https://leetcode-cn.com/problems/maximum-product-subarray/)
-* [ ] [188. Best Time to Buy and Sell Stock IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/)
+* [x] [188. Best Time to Buy and Sell Stock IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/)
 * [x] [198. House Robber](https://leetcode-cn.com/problems/house-robber/)
 * [x] [213. House Robber II](https://leetcode-cn.com/problems/house-robber-ii/)
 * [x] [221. Maximal Square](https://leetcode-cn.com/problems/maximal-square/)
 * [x] [279. Perfect Squares](https://leetcode-cn.com/problems/perfect-squares/)
 * [x] [300. Longest Increasing Subsequence](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
-* [ ] [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
+* [x] [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
 * [ ] [312. Burst Balloons](https://leetcode-cn.com/problems/burst-balloons/)
 * [x] [322. Coin Change](https://leetcode-cn.com/problems/coin-change/)
 * [ ] [363. Max Sum of Rectangle No Larger Than K](https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/)
@@ -149,6 +150,10 @@ Keep track of the time of LeetCoding
 * [ ] [621. Task Scheduler](https://leetcode-cn.com/problems/task-scheduler/)
 * [x] [647. Palindromic Substrings](https://leetcode-cn.com/problems/palindromic-substrings/)
 * [x] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
-* [ ] [980. Unique Paths III](https://leetcode-cn.com/problems/unique-paths-iii/)
+* [x] [980. Unique Paths III](https://leetcode-cn.com/problems/unique-paths-iii/)
 * [x] [1143. Longest Common Subsequence](https://leetcode-cn.com/problems/longest-common-subsequence/)
 
+### 12.Trie, Union-find
+
+* [x] [200. Number of Islands](https://leetcode-cn.com/problems/number-of-islands/)
+* [x] [547. Number of Provinces](https://leetcode-cn.com/problems/number-of-provinces/)

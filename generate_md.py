@@ -5,11 +5,13 @@ import requests
 import json
 
 session = requests.Session()
-user_agent = r'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+user_agent = r"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36"
 
 
 class Problem:
-    def __init__(self, id: int, title: str, difficulty: str, tags: List[str], url: str) -> None:
+    def __init__(
+        self, id: int, title: str, difficulty: str, tags: List[str], url: str
+    ) -> None:
         self.id = id
         self.title = title
         self.difficulty = difficulty
@@ -22,22 +24,23 @@ class Problem:
         for tag in self.tags:
             tags.append(tag["name"])
         link = "| [{}. {}]({})  |  ✅  |   {}    |".format(
-            self.id, self.title, self.url, "")
+            self.id, self.title, self.url, ""
+        )
         return link
 
     def markdown_li(self) -> str:
-        solved = 'x' if self.solved else ' '
-        link = "* [{}] [{}. {}]({})\n".format(solved,
-                                              self.id, self.title, self.url)
+        solved = "x" if self.solved else " "
+        link = "* [{}] [{}. {}]({})\n".format(solved, self.id, self.title, self.url)
         return link
 
 
 def fetch_problems(problem_title: str) -> Optional[Problem]:
     slug = problem_title
     url = "https://leetcode.com/graphql"
-    params = {'operationName': "getQuestionDetail",
-              'variables': {'titleSlug': slug},
-              'query': '''query getQuestionDetail($titleSlug: String!) {
+    params = {
+        "operationName": "getQuestionDetail",
+        "variables": {"titleSlug": slug},
+        "query": """query getQuestionDetail($titleSlug: String!) {
             question(titleSlug: $titleSlug) {
                 questionId
                 questionFrontendId
@@ -53,20 +56,28 @@ def fetch_problems(problem_title: str) -> Optional[Problem]:
                         slug
                 }
             }
-        }'''
-              }
+        }""",
+    }
 
-    json_data = json.dumps(params).encode('utf8')
-    headers = {'User-Agent': user_agent, 'Connection':
-               'keep-alive', 'Content-Type': 'application/json',
-               'Referer': 'https://leetcode.com/problems/' + slug}
+    json_data = json.dumps(params).encode("utf8")
+    headers = {
+        "User-Agent": user_agent,
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "Referer": "https://leetcode.com/problems/" + slug,
+    }
 
     try:
         resp = session.post(url, data=json_data, headers=headers, timeout=10)
-        question = resp.json()['data']['question']
+        question = resp.json()["data"]["question"]
         raw_url = "https://leetcode-cn.com/problems/{}/".format(slug)
-        problem = Problem(int(question["questionFrontendId"]), question["questionTitle"],
-                          question["difficulty"], question["topicTags"], raw_url)
+        problem = Problem(
+            int(question["questionFrontendId"]),
+            question["questionTitle"],
+            question["difficulty"],
+            question["topicTags"],
+            raw_url,
+        )
         return problem
     except:
         print("encounter an error while fetching {}".format(slug))
@@ -88,14 +99,13 @@ def render_md(file: str):
     lines.append("\n")
     problems: List[Problem] = []
     for line in lines:
-
         slugs: List[str] = slug.findall(line)
         if len(slugs) == 1:
             title = get_title(slugs[0])
             problem = fetch_problems(title)
             if problem:
                 if problem.id in visited:
-                    continue
+                    print(f"duplicate problems:{problem.id}")
 
                 visited.add(problem.id)
                 if problem.id in solved:
@@ -127,7 +137,7 @@ def get_solved(dir: str) -> Set[int]:
         for file in files:
             if problem.match(file):
                 problems.append(file)
-                solved.add(int(file.split('.')[0]))
+                solved.add(int(file.split(".")[0]))
         if problems:
             print(root, len(problems))
     print("total solved : {}".format(len(solved)))
