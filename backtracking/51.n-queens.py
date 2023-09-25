@@ -44,42 +44,60 @@ class Solution:
     #     backtrack([], 0)
     #     return ans
 
+    # def solveNQueens(self, n: int) -> List[List[str]]:
+    #     # backtracking with bit manipulation
+    #     # space complexity: O(n) used in call stack
+    #     # time complexity: O(n!)
+
+    #     def backtrack(way: List[str], i: int):
+    #         nonlocal column, pie, na
+
+    #         if len(way) == n:
+    #             ans.append(way[:])
+    #             return
+
+    #         for j in range(n):
+
+    #             if 1 << j & column or 1 << i-j+n & pie or 1 << i+j & na:
+    #                 continue
+
+    #             column = 1 << j ^ column
+    #             pie = 1 << i-j+n ^ pie  # prevent negative result
+    #             na = 1 << i+j ^ na
+
+    #             cur = ["."]*n
+    #             cur[j] = "Q"
+    #             way.append("".join(cur))
+
+    #             backtrack(way, i+1)
+    #             way.pop()
+
+    #             column = 1 << j ^ column
+    #             pie = 1 << i-j+n ^ pie
+    #             na = 1 << i+j ^ na
+
+    #     column, pie, na = 0, 0, 0
+
+    #     ans = []
+    #     backtrack([], 0)
+    #     return ans
+
     def solveNQueens(self, n: int) -> List[List[str]]:
-        # backtracking with bit manipulation
-        # space complexity: O(n) used in call stack
+        # DFS
+        # space complexity: O(n)
         # time complexity: O(n!)
 
-        def backtrack(way: List[str], i: int):
-            nonlocal column, pie, na
-
-            if len(way) == n:
-                ans.append(way[:])
-                return
-
-            for j in range(n):
-
-                if 1 << j & column or 1 << i-j+n & pie or 1 << i+j & na:
-                    continue
-
-                column = 1 << j ^ column
-                pie = 1 << i-j+n ^ pie  # prevent negative result
-                na = 1 << i+j ^ na
-
-                cur = ["."]*n
-                cur[j] = "Q"
-                way.append("".join(cur))
-
-                backtrack(way, i+1)
-                way.pop()
-
-                column = 1 << j ^ column
-                pie = 1 << i-j+n ^ pie
-                na = 1 << i+j ^ na
-
-        column, pie, na = 0, 0, 0
+        def dfs(x: int, cols: List[int], xy_diff: List[int], xy_sum: List[int]):
+            if x == n:
+                ans.append(cols[:])
+            for y in range(n):
+                if y not in cols and x - y not in xy_diff and x + y not in xy_sum:
+                    dfs(x + 1, cols + [y], xy_diff + [x - y], xy_sum + [x + y])
 
         ans = []
-        backtrack([], 0)
-        return ans
+        dfs(0, [], [], [])
+
+        return [["." * i + "Q" + "." * (n - i - 1) for i in col] for col in ans]
+
 
 # @lc code=end
