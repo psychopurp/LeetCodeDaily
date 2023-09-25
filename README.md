@@ -50,6 +50,7 @@ Keep track of the time of LeetCoding
 ### 4.Hash Map, Set
 
 * [ ] [1. Two Sum](https://leetcode-cn.com/problems/two-sum/)
+* [x] [36. Valid Sudoku](https://leetcode-cn.com/problems/valid-sudoku/)
 * [x] [49. Group Anagrams](https://leetcode-cn.com/problems/group-anagrams/)
 * [x] [242. Valid Anagram](https://leetcode-cn.com/problems/valid-anagram/)
 
@@ -155,6 +156,7 @@ Keep track of the time of LeetCoding
 
 ### 12.Trie, Union-find
 
+* [x] [130. Surrounded Regions](https://leetcode-cn.com/problems/surrounded-regions/)
 * [x] [200. Number of Islands](https://leetcode-cn.com/problems/number-of-islands/)
 * [x] [208. Implement Trie (Prefix Tree)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)
 * [x] [212. Word Search II](https://leetcode-cn.com/problems/word-search-ii/)
