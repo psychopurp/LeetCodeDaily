@@ -4,6 +4,7 @@
 # [70] Climbing Stairs
 #
 
+
 # @lc code=start
 class Solution:
     # def climbStairs(self, n: int) -> int:
@@ -42,22 +43,39 @@ class Solution:
     #     dp_table = [0]*n
     #     return helper(dp_table, n)
 
+    # def climbStairs(self, n: int) -> int:
+    #     # s(n)=s(n-1)+s(n-2), s(1)=1 s(2)=2
+    #     # time complexity: O(n)
+    #     # spcae complexity: O(1)
+
+    #     if n <= 2:
+    #         return n
+
+    #     s1, s2 = 1, 2
+    #     sn = 0
+
+    #     for i in range(2, n):
+    #         sn, s1 = s1 + s2, s2
+    #         s2 = sn
+
+    #     return sn
+
     def climbStairs(self, n: int) -> int:
-        # s(n)=s(n-1)+s(n-2), s(1)=1 s(2)=2
-        # time complexity: O(n)
-        # spcae complexity: O(1)
+        # DFS solution
+        # time complexity: O(N)
+        # space complexity: O(N)
 
-        if n <= 2:
-            return n
+        from functools import lru_cache
 
-        s1, s2 = 1, 2
-        sn = 0
+        # used for memorization
+        @lru_cache
+        def dfs(n: int) -> int:
+            if n <= 2:
+                return n
 
-        for i in range(2, n):
-            sn, s1 = s1 + s2, s2
-            s2 = sn
+            return dfs(n - 1) + dfs(n - 2)
 
-        return sn
+        return dfs(n)
 
 
 # @lc code=end
