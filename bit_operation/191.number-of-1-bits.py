@@ -9,7 +9,7 @@
 class Solution:
     # def hammingWeight(self, n: int) -> int:
     #     # 1.bit operation
-    #     # time complexity: O(1)
+    #     # time complexity: O(K) K=32
     #     # space complexity: O(1)
 
     #     count = 0
@@ -21,7 +21,7 @@ class Solution:
 
     def hammingWeight(self, n: int) -> int:
         # 2.bit operation
-        # time complexity: O(1)
+        # time complexity: O(log n)
         # space complexity: O(1)
 
         count = 0
