@@ -9,7 +9,7 @@
 class Solution:
     # def isPowerOfTwo(self, n: int) -> bool:
     #     # 1.bit operation
-    #     # time complexity: O(1)
+    #     # time complexity: O(log n)
     #     # space complexity: O(1)
 
     #     def get_count_of_1(n: int) -> int:
