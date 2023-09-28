@@ -86,6 +86,7 @@ Keep track of the time of LeetCoding
 ### 7.Devide and Conquer, Backtracking
 
 * [x] [17. Letter Combinations of a Phone Number](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
+* [x] [37. Sudoku Solver](https://leetcode-cn.com/problems/sudoku-solver/)
 * [x] [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
 * [x] [51. N-Queens](https://leetcode-cn.com/problems/n-queens/)
 * [x] [78. Subsets](https://leetcode-cn.com/problems/subsets/)
@@ -161,4 +162,11 @@ Keep track of the time of LeetCoding
 * [x] [208. Implement Trie (Prefix Tree)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)
 * [x] [212. Word Search II](https://leetcode-cn.com/problems/word-search-ii/)
 * [x] [547. Number of Provinces](https://leetcode-cn.com/problems/number-of-provinces/)
+
+### 13.Bit operation
+
+* [x] [190. Reverse Bits](https://leetcode-cn.com/problems/reverse-bits/)
+* [x] [191. Number of 1 Bits](https://leetcode-cn.com/problems/number-of-1-bits/)
+* [x] [231. Power of Two](https://leetcode-cn.com/problems/power-of-two/)
+* [x] [338. Counting Bits](https://leetcode-cn.com/problems/counting-bits/)
 
