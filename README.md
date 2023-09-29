@@ -174,7 +174,14 @@ Keep track of the time of LeetCoding
 ### 14.String
 
 * [x] [8. String to Integer (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/)
+* [x] [14. Longest Common Prefix](https://leetcode-cn.com/problems/longest-common-prefix/)
 * [x] [58. Length of Last Word](https://leetcode-cn.com/problems/length-of-last-word/)
+* [x] [151. Reverse Words in a String](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
+* [x] [344. Reverse String](https://leetcode-cn.com/problems/reverse-string/)
 * [x] [387. First Unique Character in a String](https://leetcode-cn.com/problems/first-unique-character-in-a-string/)
+* [x] [541. Reverse String II](https://leetcode-cn.com/problems/reverse-string-ii/)
+* [x] [557. Reverse Words in a String III](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/)
 * [x] [709. To Lower Case](https://leetcode-cn.com/problems/to-lower-case/)
 * [x] [771. Jewels and Stones](https://leetcode-cn.com/problems/jewels-and-stones/)
+* [x] [917. Reverse Only Letters](https://leetcode-cn.com/problems/reverse-only-letters/)
+
