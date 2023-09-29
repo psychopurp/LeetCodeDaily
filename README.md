@@ -89,6 +89,7 @@ Keep track of the time of LeetCoding
 * [x] [37. Sudoku Solver](https://leetcode-cn.com/problems/sudoku-solver/)
 * [x] [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
 * [x] [51. N-Queens](https://leetcode-cn.com/problems/n-queens/)
+* [x] [52. N-Queens II](https://leetcode-cn.com/problems/n-queens-ii/)
 * [x] [78. Subsets](https://leetcode-cn.com/problems/subsets/)
 * [x] [169. Majority Element](https://leetcode-cn.com/problems/majority-element/)
 * [x] [215. Kth Largest Element in an Array](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
@@ -170,3 +171,10 @@ Keep track of the time of LeetCoding
 * [x] [231. Power of Two](https://leetcode-cn.com/problems/power-of-two/)
 * [x] [338. Counting Bits](https://leetcode-cn.com/problems/counting-bits/)
 
+### 14.String
+
+* [x] [8. String to Integer (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/)
+* [x] [58. Length of Last Word](https://leetcode-cn.com/problems/length-of-last-word/)
+* [x] [387. First Unique Character in a String](https://leetcode-cn.com/problems/first-unique-character-in-a-string/)
+* [x] [709. To Lower Case](https://leetcode-cn.com/problems/to-lower-case/)
+* [x] [771. Jewels and Stones](https://leetcode-cn.com/problems/jewels-and-stones/)
