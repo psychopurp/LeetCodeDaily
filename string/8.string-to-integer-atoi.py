@@ -8,7 +8,7 @@
 # @lc code=start
 class Solution:
     def myAtoi(self, s: str) -> int:
-        # Automation : State machine thingking
+        # Finite state machine
         # time complexity: O(N) N=len(s)
         # space complexity: O(1)
         STATE_START = "START"
