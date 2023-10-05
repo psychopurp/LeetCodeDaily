@@ -10,7 +10,7 @@
 
 class Solution:
     # def isMatch(self, s: str, p: str) -> bool:
-    #     # 1. DP solution
+    #     # 1. DP solution: from left to right
     #     # time complexity: O(M*N) M=len(s) N=len(P)
     #     # space complexity: O(M*N) stack size
 
@@ -31,7 +31,7 @@ class Solution:
     #     return is_match(s, p)
 
     # def isMatch(self, s: str, p: str) -> bool:
-    #     # 2. DP solution
+    #     # 2. DP solution: from left to right
     #     # time complexity: O(M*N) M=len(s) N=len(P)
     #     # space complexity: O(M*N) stack size
 
@@ -52,7 +52,7 @@ class Solution:
     #     return dp(0, 0)
 
     def isMatch(self, s: str, p: str) -> bool:
-        # 3. Bottom-up DP
+        # 3. Bottom-up DP: from right to left
         # time complexity: O(M*N) M=len(s) N=len(P)
         # space complexity: O(M*N)
 
@@ -62,6 +62,8 @@ class Solution:
             dp[i][j]=dp[i]j-2] || (dp[i-1][j] && p[j-2]==".") || (dp[i-1][j] && p[j-2]==s[i-1])
         else:
             dp[i][j]=dp[i-1][j-1] && (p[j-1]=="." || p[j-1]==s[i-1])
+
+        solution link: https://leetcode.cn/problems/regular-expression-matching/solutions/296114/shou-hui-tu-jie-wo-tai-nan-liao-by-hyj8/
         """
 
         m, n = len(s), len(p)
