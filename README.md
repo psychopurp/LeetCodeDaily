@@ -184,6 +184,7 @@ Keep track of the time of LeetCoding
 * [x] [115. Distinct Subsequences](https://leetcode-cn.com/problems/distinct-subsequences/)
 * [x] [125. Valid Palindrome](https://leetcode-cn.com/problems/valid-palindrome/)
 * [x] [151. Reverse Words in a String](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
+* [x] [205. Isomorphic Strings](https://leetcode-cn.com/problems/isomorphic-strings/)
 * [x] [242. Valid Anagram](https://leetcode-cn.com/problems/valid-anagram/)
 * [x] [344. Reverse String](https://leetcode-cn.com/problems/reverse-string/)
 * [x] [387. First Unique Character in a String](https://leetcode-cn.com/problems/first-unique-character-in-a-string/)
