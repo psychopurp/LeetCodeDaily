@@ -31,26 +31,46 @@ class Solution:
 
     #     return dp(0, 0)
 
+    # def minPathSum(self, grid: List[List[int]]) -> int:
+    #     # 2. Bottom-up DP
+    #     # time complexity: O(M*N)
+    #     # space complexity: O(M*N)
+
+    #     m = len(grid)
+    #     n = len(grid[0])
+
+    #     def get_val(i: int, j: int) -> int:
+    #         if i >= m or j >= n:
+    #             return float('inf')
+    #         return grid[i][j]
+
+    #     for i in range(m-1, -1, -1):
+    #         for j in range(n-1, -1, -1):
+    #             if i == m-1 and j == n-1:
+    #                 continue
+    #             grid[i][j] = min(get_val(i, j+1), get_val(i+1, j))+grid[i][j]
+
+    #     return grid[0][0]
+
     def minPathSum(self, grid: List[List[int]]) -> int:
-        # 2. Bottom-up DP
+        # 3. Top-down DP: from end to start
         # time complexity: O(M*N)
         # space complexity: O(M*N)
 
-        m = len(grid)
-        n = len(grid[0])
+        from functools import lru_cache
 
-        def get_val(i: int, j: int) -> int:
-            if i >= m or j >= n:
-                return float('inf')
-            return grid[i][j]
+        @lru_cache
+        def dp(i: int, j: int) -> int:
+            if i < 0 or j < 0:
+                return float("inf")
 
-        for i in range(m-1, -1, -1):
-            for j in range(n-1, -1, -1):
-                if i == m-1 and j == n-1:
-                    continue
-                grid[i][j] = min(get_val(i, j+1), get_val(i+1, j))+grid[i][j]
+            if i == 0 and j == 0:
+                return grid[i][j]
 
-        return grid[0][0]
+            return min(dp(i - 1, j), dp(i, j - 1)) + grid[i][j]
+
+        m, n = len(grid), len(grid[0])
+        return dp(m - 1, n - 1)
 
 
 # @lc code=end
