@@ -104,6 +104,7 @@ Keep track of the time of LeetCoding
 * [x] [433. Minimum Genetic Mutation](https://leetcode-cn.com/problems/minimum-genetic-mutation/)
 * [x] [515. Find Largest Value in Each Tree Row](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/)
 * [x] [529. Minesweeper](https://leetcode-cn.com/problems/minesweeper/)
+* [x] [980. Unique Paths III](https://leetcode-cn.com/problems/unique-paths-iii/)
 
 ### 9.Greedy Algorithm
 
@@ -154,7 +155,6 @@ Keep track of the time of LeetCoding
 * [ ] [621. Task Scheduler](https://leetcode-cn.com/problems/task-scheduler/)
 * [x] [647. Palindromic Substrings](https://leetcode-cn.com/problems/palindromic-substrings/)
 * [x] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
-* [x] [980. Unique Paths III](https://leetcode-cn.com/problems/unique-paths-iii/)
 * [x] [1143. Longest Common Subsequence](https://leetcode-cn.com/problems/longest-common-subsequence/)
 
 ### 12.Trie, Union-find
