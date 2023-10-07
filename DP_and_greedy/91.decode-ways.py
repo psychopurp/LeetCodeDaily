@@ -99,29 +99,56 @@ class Solution:
 
     #     return dp[n-1]
 
+    # def numDecodings(self, s: str) -> int:
+    #     # Bottom-up DP : from left to right
+    #     # time complexity: O(2^N)
+    #     # space complexity: O(N) used for memorization
+
+    #     if s[0] == '0':
+    #         return 0
+
+    #     @lru_cache(None)
+    #     def dp(i: int) -> int:
+    #         if i < 1:
+    #             return 1
+
+    #         if s[i] == '0':
+    #             if s[i-1] == '1' or s[i-1] == '2':
+    #                 return dp(i-2)
+    #             return 0
+
+    #         if s[i-1] == '1' or (s[i-1] == '2' and '1' <= s[i] <= '6'):
+    #             return dp(i-1)+dp(i-2)
+
+    #         return dp(i-1)
+
+    #     return dp(len(s)-1)
+
     def numDecodings(self, s: str) -> int:
-        # Bottom-up DP : from left to right
+        # Top-down DP : from left to right
         # time complexity: O(2^N)
-        # space complexity: O(N) used for memorization
+        # space complexity: O(N) stack usage
 
-        if s[0] == '0':
-            return 0
+        from functools import lru_cache
 
-        @lru_cache(None)
-        def dp(i: int) -> int:
-            if i < 1:
+        @lru_cache
+        def dp(s: str) -> int:
+            if not s:
                 return 1
 
-            if s[i] == '0':
-                if s[i-1] == '1' or s[i-1] == '2':
-                    return dp(i-2)
+            if s[0] == "0":
                 return 0
 
-            if s[i-1] == '1' or (s[i-1] == '2' and '1' <= s[i] <= '6'):
-                return dp(i-1)+dp(i-2)
+            if len(s) == 1:
+                return 1
 
-            return dp(i-1)
+            if len(s) >= 2:
+                if s[0] == "1" or (s[0] == "2" and "0" <= s[1] <= "6"):
+                    return dp(s[1:]) + dp(s[2:])
 
-        return dp(len(s)-1)
+                return dp(s[1:])
+
+        return dp(s)
+
 
 # @lc code=end
