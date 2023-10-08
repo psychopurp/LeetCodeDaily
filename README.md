@@ -147,10 +147,10 @@ Keep track of the time of LeetCoding
 * [x] [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
 * [ ] [312. Burst Balloons](https://leetcode-cn.com/problems/burst-balloons/)
 * [x] [322. Coin Change](https://leetcode-cn.com/problems/coin-change/)
-* [ ] [363. Max Sum of Rectangle No Larger Than K](https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/)
-* [ ] [403. Frog Jump](https://leetcode-cn.com/problems/frog-jump/)
+* [x] [363. Max Sum of Rectangle No Larger Than K](https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/)
+* [x] [403. Frog Jump](https://leetcode-cn.com/problems/frog-jump/)
 * [ ] [410. Split Array Largest Sum](https://leetcode-cn.com/problems/split-array-largest-sum/)
-* [ ] [518. Coin Change II](https://leetcode-cn.com/problems/coin-change-ii/)
+* [x] [518. Coin Change II](https://leetcode-cn.com/problems/coin-change-ii/)
 * [ ] [552. Student Attendance Record II](https://leetcode-cn.com/problems/student-attendance-record-ii/)
 * [ ] [621. Task Scheduler](https://leetcode-cn.com/problems/task-scheduler/)
 * [x] [647. Palindromic Substrings](https://leetcode-cn.com/problems/palindromic-substrings/)
@@ -195,4 +195,3 @@ Keep track of the time of LeetCoding
 * [x] [709. To Lower Case](https://leetcode-cn.com/problems/to-lower-case/)
 * [x] [771. Jewels and Stones](https://leetcode-cn.com/problems/jewels-and-stones/)
 * [x] [917. Reverse Only Letters](https://leetcode-cn.com/problems/reverse-only-letters/)
-
