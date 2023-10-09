@@ -41,38 +41,39 @@ class Solution:
     #     n = len(s)
     #     dp = [[False for _ in range(n)] for _ in range(n)]
     #     ans = 0
-
-    #     for j in range(n):
-    #         for i in range(j+1):
-    #             if s[i] == s[j] and (j-i <= 1 or dp[i+1][j-1]):
-    #                 dp[i][j] = True
+    #     for r in range(n):
+    #         for l in range(r + 1):
+    #             if s[l] == s[r] and (r - l <= 1 or dp[l + 1][r - 1]):
+    #                 dp[l][r] = True
     #                 ans += 1
 
     #     return ans
 
     def countSubstrings(self, s: str) -> int:
-        # dp : dp[i][j] refers to the substring s[i:j+1] whether a palindromic string
+        # expand from middle to two ends
         # time complexity: O(n^2)
         # space complexity: O(1)
 
-        def valid_len(l: int, r: int) -> int:
-            cnt = 0
+        n = len(s)
 
-            while r < n and l >= 0 and s[l] == s[r]:
-                cnt += 1
+        def get_count_of_palindrome(l: int, r: int) -> int:
+            count = 0
+            while l >= 0 and r < n and s[l] == s[r]:
+                count += 1
                 l -= 1
                 r += 1
-            return cnt
 
-        n = len(s)
-        ans = 0
+            return count
 
+        total = 0
         for i in range(n):
-            ans += valid_len(i, i)
-            if i < n-1:
-                ans += valid_len(i, i+1)
-        return ans
-        # dp(len)
+            total = (
+                total
+                + get_count_of_palindrome(i, i)
+                + get_count_of_palindrome(i, i + 1)
+            )
+
+        return total
 
 
 # @lc code=end
