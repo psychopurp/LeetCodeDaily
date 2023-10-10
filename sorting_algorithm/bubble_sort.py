@@ -1,6 +1,17 @@
 import random
 from typing import List
 
+"""
+Bubble Sort
+
+Time complexity: 
+- Worst:O(N^2)
+- Best:O(N)
+Space complexity: O(1)
+
+Stablity: stable
+"""
+
 
 def generate_random_list(length: int, min_value: int, max_value: int) -> List[int]:
     random_list = [random.randint(min_value, max_value) for _ in range(length)]
