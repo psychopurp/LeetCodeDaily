@@ -152,10 +152,12 @@ Keep track of the time of LeetCoding
 * [ ] [410. Split Array Largest Sum](https://leetcode-cn.com/problems/split-array-largest-sum/)
 * [x] [518. Coin Change II](https://leetcode-cn.com/problems/coin-change-ii/)
 * [ ] [552. Student Attendance Record II](https://leetcode-cn.com/problems/student-attendance-record-ii/)
-* [ ] [621. Task Scheduler](https://leetcode-cn.com/problems/task-scheduler/)
+* [x] [621. Task Scheduler](https://leetcode-cn.com/problems/task-scheduler/)
 * [x] [647. Palindromic Substrings](https://leetcode-cn.com/problems/palindromic-substrings/)
 * [x] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
+* [x] [887. Super Egg Drop](https://leetcode-cn.com/problems/super-egg-drop/)
 * [x] [1143. Longest Common Subsequence](https://leetcode-cn.com/problems/longest-common-subsequence/)
+* [x] [1884. Egg Drop With 2 Eggs and N Floors](https://leetcode-cn.com/problems/egg-drop-with-2-eggs-and-n-floors/)
 
 ### 12.Trie, Union-find
 
