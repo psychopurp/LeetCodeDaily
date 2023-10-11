@@ -19,50 +19,48 @@ def generate_random_list(length: int, min_value: int, max_value: int) -> List[in
 
 
 def merge_sort(nums: List[int]):
-    def merge(left: List[int], right: List[int]) -> List[int]:
+    def merge(l1: int, r1: int, l2: int, r2: int) -> List[int]:
         # time complexity: O(N)
-        res = []
-        i = j = 0
-        while i < len(left) or j < len(right):
-            if i < len(left) and j < len(right):
-                if left[i] <= right[j]:
-                    res.append(left[i])
-                    i += 1
+        tmp = nums[l1 : r2 + 1]
+        x = l1
+        l1, r1 = 0, r1 - l1
+        l2, r2 = r1 + 1, r2 - x  # the previous l1
+
+        while l1 <= r1 or l2 <= r2:
+            if l1 <= r1 and l2 <= r2:
+                if tmp[l1] < tmp[l2]:
+                    nums[x] = tmp[l1]
+                    l1 += 1
                 else:
-                    res.append(right[j])
-                    j += 1
-                continue
+                    nums[x] = tmp[l2]
+                    l2 += 1
+            elif l1 <= r1:
+                nums[x] = tmp[l1]
+                l1 += 1
+            elif l2 <= r2:
+                nums[x] = tmp[l2]
+                l2 += 1
+            x += 1
 
-            if i < len(left):
-                res.append(left[i])
-                i += 1
-                continue
-
-            if j < len(right):
-                res.append(right[j])
-                j += 1
-
-        return res
-
-    def sort(l: int, r: int) -> List[int]:
-        # time complexity: O(N)
+    def merge_sort_range(l: int, r: int) -> List[int]:
+        # time complexity: O(log N)
         if l == r:
             return [nums[l]]
         # devide
         mid = (l + r) >> 1
         # left part
-        left_half = sort(l, mid)
+        merge_sort_range(l, mid)
         # right part
-        right_half = sort(mid + 1, r)
+        merge_sort_range(mid + 1, r)
+        merge(l, mid, mid + 1, r)
 
-        return merge(left_half, right_half)
-
-    return sort(0, len(nums) - 1)
+    merge_sort_range(0, len(nums) - 1)
 
 
 if __name__ == "__main__":
     nums = generate_random_list(4, 0, 10)
+    nums = [5, 1, 1, 2, 0, 0]
     print(nums)
-    nums = merge_sort(nums)
+    merge_sort(nums)
     print(nums)
     print(nums == sorted(nums))
