@@ -145,7 +145,7 @@ Keep track of the time of LeetCoding
 * [x] [279. Perfect Squares](https://leetcode-cn.com/problems/perfect-squares/)
 * [x] [300. Longest Increasing Subsequence](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 * [x] [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
-* [ ] [312. Burst Balloons](https://leetcode-cn.com/problems/burst-balloons/)
+* [x] [312. Burst Balloons](https://leetcode-cn.com/problems/burst-balloons/)
 * [x] [322. Coin Change](https://leetcode-cn.com/problems/coin-change/)
 * [x] [363. Max Sum of Rectangle No Larger Than K](https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/)
 * [x] [403. Frog Jump](https://leetcode-cn.com/problems/frog-jump/)
