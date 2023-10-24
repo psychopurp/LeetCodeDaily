@@ -21,11 +21,11 @@ class Solution:
             cur_load = 0
 
             for i in weights:
-                if cur_load + i <= capacity:
-                    cur_load += i
-                else:
+                if cur_load + i > capacity:
+                    cur_load = 0
                     day += 1
-                    cur_load = i
+
+                cur_load += i
 
             if cur_load != 0:
                 day += 1
