@@ -122,6 +122,8 @@ Keep track of the time of LeetCoding
 * [x] [74. Search a 2D Matrix](https://leetcode-cn.com/problems/search-a-2d-matrix/)
 * [x] [153. Find Minimum in Rotated Sorted Array](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
 * [x] [367. Valid Perfect Square](https://leetcode-cn.com/problems/valid-perfect-square/)
+* [x] [875. Koko Eating Bananas](https://leetcode-cn.com/problems/koko-eating-bananas/)
+* [x] [1011. Capacity To Ship Packages Within D Days](https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days/)
 
 ### 11.Dynamic Programming
 
@@ -149,9 +151,9 @@ Keep track of the time of LeetCoding
 * [x] [322. Coin Change](https://leetcode-cn.com/problems/coin-change/)
 * [x] [363. Max Sum of Rectangle No Larger Than K](https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/)
 * [x] [403. Frog Jump](https://leetcode-cn.com/problems/frog-jump/)
-* [ ] [410. Split Array Largest Sum](https://leetcode-cn.com/problems/split-array-largest-sum/)
+* [x] [410. Split Array Largest Sum](https://leetcode-cn.com/problems/split-array-largest-sum/)
 * [x] [518. Coin Change II](https://leetcode-cn.com/problems/coin-change-ii/)
-* [ ] [552. Student Attendance Record II](https://leetcode-cn.com/problems/student-attendance-record-ii/)
+* [x] [552. Student Attendance Record II](https://leetcode-cn.com/problems/student-attendance-record-ii/)
 * [x] [621. Task Scheduler](https://leetcode-cn.com/problems/task-scheduler/)
 * [x] [647. Palindromic Substrings](https://leetcode-cn.com/problems/palindromic-substrings/)
 * [x] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
@@ -197,3 +199,4 @@ Keep track of the time of LeetCoding
 * [x] [709. To Lower Case](https://leetcode-cn.com/problems/to-lower-case/)
 * [x] [771. Jewels and Stones](https://leetcode-cn.com/problems/jewels-and-stones/)
 * [x] [917. Reverse Only Letters](https://leetcode-cn.com/problems/reverse-only-letters/)
+
