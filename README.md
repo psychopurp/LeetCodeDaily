@@ -44,6 +44,7 @@ Keep track of the time of LeetCoding
 * [x] [20. Valid Parentheses](https://leetcode-cn.com/problems/valid-parentheses/)
 * [x] [42. Trapping Rain Water](https://leetcode-cn.com/problems/trapping-rain-water/)
 * [x] [84. Largest Rectangle in Histogram](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/)
+* [x] [85. Maximal Rectangle](https://leetcode-cn.com/problems/maximal-rectangle/)
 * [x] [155. Min Stack](https://leetcode-cn.com/problems/min-stack/)
 * [x] [239. Sliding Window Maximum](https://leetcode-cn.com/problems/sliding-window-maximum/)
 * [x] [641. Design Circular Deque](https://leetcode-cn.com/problems/design-circular-deque/)
@@ -104,7 +105,9 @@ Keep track of the time of LeetCoding
 * [x] [433. Minimum Genetic Mutation](https://leetcode-cn.com/problems/minimum-genetic-mutation/)
 * [x] [515. Find Largest Value in Each Tree Row](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/)
 * [x] [529. Minesweeper](https://leetcode-cn.com/problems/minesweeper/)
+* [ ] [773. Sliding Puzzle](https://leetcode-cn.com/problems/sliding-puzzle/)
 * [x] [980. Unique Paths III](https://leetcode-cn.com/problems/unique-paths-iii/)
+* [x] [1091. Shortest Path in Binary Matrix](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/)
 
 ### 9.Greedy Algorithm
 
@@ -157,6 +160,8 @@ Keep track of the time of LeetCoding
 * [x] [621. Task Scheduler](https://leetcode-cn.com/problems/task-scheduler/)
 * [x] [647. Palindromic Substrings](https://leetcode-cn.com/problems/palindromic-substrings/)
 * [x] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
+* [x] [746. Min Cost Climbing Stairs](https://leetcode-cn.com/problems/min-cost-climbing-stairs/)
+* [ ] [818. Race Car](https://leetcode-cn.com/problems/race-car/)
 * [x] [887. Super Egg Drop](https://leetcode-cn.com/problems/super-egg-drop/)
 * [x] [1143. Longest Common Subsequence](https://leetcode-cn.com/problems/longest-common-subsequence/)
 * [x] [1884. Egg Drop With 2 Eggs and N Floors](https://leetcode-cn.com/problems/egg-drop-with-2-eggs-and-n-floors/)
@@ -199,4 +204,3 @@ Keep track of the time of LeetCoding
 * [x] [709. To Lower Case](https://leetcode-cn.com/problems/to-lower-case/)
 * [x] [771. Jewels and Stones](https://leetcode-cn.com/problems/jewels-and-stones/)
 * [x] [917. Reverse Only Letters](https://leetcode-cn.com/problems/reverse-only-letters/)
-
