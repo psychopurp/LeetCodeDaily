@@ -18,8 +18,8 @@ from typing import List
 
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
-        # DFS
-        # time complexity: O(n^2)
+        # DFS + recursion solution
+        # time complexity: O(n)
         # space complexity: O(n)
 
         if not preorder:
