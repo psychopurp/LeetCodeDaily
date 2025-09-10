@@ -9,30 +9,50 @@ from typing import List
 
 
 class Solution:
+    # def findDuplicate(self, nums: List[int]) -> int:
+    #     # binary search
+    #     # time complexity: O(N*logN)
+    #     # space complexity: O(1)
+
+    #     def count_range(end: int) -> int:
+    #         count = 0
+    #         for num in nums:
+    #             if num <= end:
+    #                 count += 1
+    #         return count
+
+    #     l, r = 1, len(nums)-1
+
+    #     while l <= r:
+    #         mid = (l+r)//2
+    #         count = count_range(mid)
+    #         if l==r and count>1:
+    #             return l
+
+    #         if count > mid:
+    #             r = mid
+    #         else:
+    #             l = mid+1
+
     def findDuplicate(self, nums: List[int]) -> int:
-        # binary search
-        # time complexity: O(N*logN)
+        # floyd's tortoise and hare
+        # time complexity: O(N)
         # space complexity: O(1)
 
-        def count_range(end: int) -> int:
-            count = 0
-            for num in nums:
-                if num <= end:
-                    count += 1
-            return count
+        slow = fast = 0
 
-        l, r = 1, len(nums)-1
+        while True:
+            slow = nums[slow]
+            fast = nums[nums[fast]]
+            if slow == fast:
+                break
 
-        while l <= r:
-            mid = (l+r)//2
-            count = count_range(mid)
-            if l==r and count>1:
-                return l
-            
-            if count > mid:
-                r = mid
-            else:
-                l = mid+1
+        cur = 0
+        while True:
+            cur = nums[cur]
+            slow = nums[slow]
+            if slow == cur:
+                return slow
 
 
 # @lc code=end
