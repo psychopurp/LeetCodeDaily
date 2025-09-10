@@ -28,18 +28,39 @@ class Solution:
 
     #     return prev
 
+    # def reverseList(self, head: ListNode) -> ListNode:
+    #     # time complexity: O(n)
+    #     # space complexity: O(n) (stack spcae for recursive calls)
+
+    #     if not head or not head.next:
+    #         return head
+
+    #     cur = self.reverseList(head.next)
+    #     head.next.next = head
+    #     head.next = None
+
+    #     return cur
+
     def reverseList(self, head: ListNode) -> ListNode:
+        # recursion solution 2
         # time complexity: O(n)
         # space complexity: O(n) (stack spcae for recursive calls)
 
-        if not head or not head.next:
-            return head
+        # return new head and tail
+        def reverse(node):
+            if not node.next:
+                return node, node
 
-        cur = self.reverseList(head.next)
-        head.next.next = head
-        head.next = None
+            head, tail = reverse(node.next)
+            tail.next = node
+            node.next = None
+            return head, node
 
-        return cur
+        if not head:
+            return None
+
+        new_head, tail = reverse(head)
+        return new_head
 
 
 # @lc code=end
